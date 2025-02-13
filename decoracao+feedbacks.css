@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: Alata;
+    font-weight: 400;
 }
 
 /* cabeçalho */
@@ -19,19 +20,13 @@ header {
 
 header h1 {
     margin-left: 40px;
-    /* color: rgb(206, 116, 42); */
     color: #c74545;
-    font: alata;
     font-weight: 400;
     font-size: 40px;
 }
 
 header nav a {
     margin-right: 30px;
-    /* width: 75px;
-    height: 49px; */
-    font: alata;
-    /* font-weight: 400; */
     font-size: 24px;
     color: #bc5353;
     text-decoration: none;
@@ -70,16 +65,12 @@ header nav a:hover {  /* opcional */
 
 main h2{
     color: black;
-    font: alata;
-    font-weight: 400;
     font-size: 26px;
     font-weight: bold;
 }
 
 main h3{
     color: black;
-    font: alata;
-    font-weight: 400;
     font-size: 20px;
 }
 /* fim foto + textinho */
@@ -207,7 +198,7 @@ main h3{
     font-size: 18px;
 }
 .form input, .form textarea {
-    background-color: #bdd3ced0;
+    background-color: #cde0dc;
     padding: 20px;
     border-radius: 4px;
     margin-bottom: 10px;
@@ -232,7 +223,7 @@ main h3{
     padding: 20px 18px 1px 39px;
 }
 .input-feedback button {
-    background-color: #BDD3CE;
+    background-color: #cde0dc;
     color: black;
     border: none;
     padding: 10px 20px;
@@ -307,6 +298,7 @@ nav a:hover {   /* contato */
 /* -------------------------   RESPONSIVIDADE   ------------------------ */
 
 @media screen and (max-width: 768px) {
+
     /* Header */
     header {
         flex-direction: row;
