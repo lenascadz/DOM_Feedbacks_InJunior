@@ -1,0 +1,421 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* cabeçalho */
+header {
+    width: 1,440px;
+    height: 109px;
+    overflow: hidden;
+    background-color: #013D5A; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+header h1 {
+    margin-left: 40px;
+    /* color: rgb(206, 116, 42); */
+    color: #c74545;
+    font: alata;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+header nav a {
+    margin-right: 30px;
+    /* width: 75px;
+    height: 49px; */
+    font: alata;
+    /* font-weight: 400; */
+    font-size: 24px;
+    color: #bc5353;
+    text-decoration: none;
+    
+}
+
+header nav a:hover {  /* opcional */
+    color: white; 
+}
+/* fim cabeçalho */
+
+
+/* foto + textinho */
+.sobremim {
+    width:1,440px;
+    background-color: #BDD3CE;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+}
+.foto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.texto {
+    max-width: 600px;
+    font-size: 18px;
+}
+
+
+main h2{
+    color: black;
+    font: alata;
+    font-weight: 400;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+main h3{
+    color: black;
+    font: alata;
+    font-weight: 400;
+    font-size: 20px;
+}
+/* fim foto + textinho */
+
+
+/* hobbies + top 5 */
+.informacoes h3 {
+    color: black;
+    font: alata;
+    font-weight: 400;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.informacoes {
+    min-height: 289px;
+    background-color: #fcf3e3e6;
+    padding: 30px 0px;
+  }
+
+.container-hobbies-musicas {
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; /
+    gap: 15px; 
+    flex-wrap: wrap; /* para telas menores */
+    width: 100%;
+}
+
+.hobbies, .musicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex: 1; espaços iguais */
+}
+
+.hobbies h3, .musicas h3 {
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+
+.hobbies ul, .musicas ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; /* alinhamento */
+}
+
+.informacoes ul {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 22px; 
+    list-style: none; /* sem marcadores da lista */
+    padding: 30px;
+    align-items: stretch; 
+}
+
+.card {
+    width: 110px; 
+    height: 160px; 
+    background-color: #dfdfdf;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    overflow: hidden; /* conteudo nao ultrapasse o tamanho */
+}
+
+.imagem-card {
+    position:relative ; 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imagem-card img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+  
+.texto-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    min-height: 20%; 
+    background: #fcf3e38a; 
+    color: rgb(1, 1, 1); 
+    font-size: 13px; 
+    padding: 3px 5px; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* quebre do texto em várias linhas */
+    border-radius: 0 0 10px 10px; 
+    overflow: hidden; /* Evita que o texto saia da área */
+    word-wrap: break-word; /* Quebra o texto se necessário */
+}
+/* fim hobbies + top 5 */
+
+/* feedback */
+.feedback {
+    background-color: #fcf3e3e6;
+    min-height: 236px;
+    width: ;
+    text-align: left;
+    font: alata;
+    padding: 40px 60px; 
+  }
+  
+.form {
+    display: flex;
+    flex-direction:column;
+    padding: 30px;
+    color: black;
+    font: Alata;
+    font-weight: 400;
+    font-size: 18px;
+}
+  
+.form p {
+    background-color: #BDD3CE;
+    padding-bottom: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+  
+.feedback-block {
+    display: block;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.text-feedback{
+    width: 100%;
+}
+  
+.enviar {
+    background-color: #BDD3CE;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    width: 127px;
+    left: 1149px;
+    top: 989px;
+}
+  
+.feedback h3{
+    color: black;
+    font: alata;
+    font-weight: 400;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.input-feedback {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.input-feedback :hover {   /* botao de enviar */
+    text-decoration: underline;
+    color: #c74545; 
+} 
+/* fim feedback */
+/* add ao feedback */
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-card {
+    background: #f3f3f3;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+/* add feedback */
+
+/* rodapé */
+footer {     /* rodape todo */
+    height: 70px;
+    background-color: #013D5A;     
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+footer nav a {   /* contato */
+    width: 162px;
+    height: 38px;
+    align-items: center;
+    background-color: #1e546f;
+    border-radius: 5px;
+    font: alata;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    padding: 16px 32px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.instagram img{  /* redes */
+    width: 32px;
+    height: 32px;
+}
+.linkedin img{  /* redes */
+    width: 32px;
+    height: 32px;
+}
+.facebook img{  /* redes */
+    width: 32px;
+    height: 32px;
+}
+.git img{  /* redes */
+    width: 32px;
+    height: 32px;
+}
+
+nav a:hover {   /* contato */
+    color: azure;    
+    background-color: #c74545; 
+} 
+/* fim rodapé */
+
+
+/* -------------------------   RESPONSIVIDADE   ------------------------ */
+
+@media screen and (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 32px;
+    }
+
+    .sobremim {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .foto img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .texto {
+        width: 95%;
+        font-size: 16px;
+    }
+
+    /* Feedbacks */
+    .feedback {
+        padding: 20px;
+    }
+
+    .feedback-block {
+        max-width: 100%;
+    }
+
+    .input-feedback {
+        justify-content: center;
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 28px;
+        gap: 28px;
+        background: #013D5A; 
+        border: 10px solid #013D5A;
+    }
+
+    footer nav a {
+        padding: 12px 32px;
+    }
+
+    .contato {
+        background: #D9D9D9;
+        padding: 12px 20px;
+        border-radius: 5px;
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .redes {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .redes img {
+        width: 45px; 
+        height: 45px;
+    }
+}
